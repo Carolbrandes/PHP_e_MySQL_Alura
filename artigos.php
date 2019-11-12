@@ -21,10 +21,10 @@ $artigo = $ListaArtigos->exibirArtigoEspecifico($_GET['id']);
     <div id="container">
 
         <h1>
-           
+           <?php echo $artigo['titulo'];?>
         </h1>
         <p>
-           
+        <?php echo $artigo['conteudo'];?>
         </p>
         <div>
             <a class="botao botao-block" href="index.php">Voltar</a>

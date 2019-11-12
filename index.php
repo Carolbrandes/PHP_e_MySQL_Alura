@@ -26,7 +26,7 @@ $artigos = $listaArtigos->exibirTodosArtigos();
         <?php foreach ($artigos as $artigo) {?>
 
         <h2>
-            <a href="artigos.php?id="<?php echo $artigo['id']; ?>>
+            <a href="artigos.php?id=<?php echo $artigo['id']; ?>">
                 <?php echo $artigo['titulo'];?>
             </a>
         </h2>
