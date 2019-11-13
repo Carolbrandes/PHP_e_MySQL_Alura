@@ -7,7 +7,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $artigo->adicionarArtigo($_POST['titulo'], $_POST['conteudo']);
 
     // vai montar um  cabeçalho para fazer uma nova requisição com metodo get para pag index e depos usar o metodo die para interromper a execucao a fim de nao fazer cadastros iguais qd a pg e recarregada.
-    header('Location: adicionar-artigo.php');
+    header('Location: index.html');
     die();
 }
 
