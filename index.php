@@ -4,10 +4,8 @@
 <?php
 
 require 'src/conexaoBD.php';
-include_once 'src/classes/Artigos.php';
-
-$listaArtigos = new Artigos($mysql);
-$artigos = $listaArtigos->exibirTodosArtigos();
+require_once  'src/classes/Artigos.php';
+require_once 'src/consultarTodosArtigos.php';
 
 ?>
 
